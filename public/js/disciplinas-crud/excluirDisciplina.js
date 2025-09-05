@@ -1,10 +1,10 @@
-function excluirAluno(idAluno) {
-            fetch(url + idAluno, {
+function excluirDisciplina(idDisciplina) {
+            fetch(url + idDisciplina, {
                 method: 'DELETE'
             })
                 .then((res) => { return res.json() })
-                .then((alunoSalvo) => {
-                    pegarAlunos()
+                .then((disciplinaSalvo) => {
+                    pegarDisciplinas()
                 })
 
         }

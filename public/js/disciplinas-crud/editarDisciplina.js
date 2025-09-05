@@ -1,15 +1,14 @@
-function editarAluno(idAluno) {
-            console.log("vou editar o aluno", idAluno)
+function editarDisciplina(idDisciplina) {
+            console.log("vou editar o disciplina", idDisciplina)
             inputs = document.querySelectorAll("input")
 
-            fetch(url + idAluno)
+            fetch(url + idDisciplina)
                 .then((res) => { return res.json() })
-                .then((aluno) => {
-                    console.log("aluno veio", aluno)
-                    inputs[0].value = aluno.id
-                    inputs[1].value = aluno.nome
-                    inputs[2].value = aluno.idade
-                    inputs[3].value = aluno.sexo
-                    inputs[4].value = aluno.matricula
+                .then((disciplina) => {
+                    console.log("disciplina veio", disciplina)
+                    inputs[0].value = disciplina.id
+                    inputs[1].value = disciplina.nome
+                    inputs[2].value = disciplina.curso
+                    inputs[3].value = disciplina.turno
                 })
         }

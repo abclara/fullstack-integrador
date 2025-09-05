@@ -1,30 +1,28 @@
-function atualizarAluno() {
+function atualizarDisciplina() {
             inputs = document.querySelectorAll("input")
 
-            idAluno = inputs[0].value
+            idDisciplina = inputs[0].value
 
-            aluno = {
+            disciplina = {
                 nome: inputs[1].value,
-                idade: inputs[2].value,
-                sexo: inputs[3].value,
-                matricula: inputs[4].value
+                curso: inputs[2].value,
+                turno: inputs[3].value,
             }
 
-            fetch(url + idAluno, {
+            fetch(url + idDisciplina, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(aluno)
+                body: JSON.stringify(disciplina)
             })
                 .then((res) => { return res.json() })
-                .then((alunoSalvo) => {
-                    pegarAlunos()
+                .then((disciplinaSalvo) => {
+                    pegarDisciplina()
 
                     inputs[0].value = ""
                     inputs[1].value = ""
                     inputs[2].value = ""
                     inputs[3].value = ""
-                    inputs[4].value = ""
                 })
         }

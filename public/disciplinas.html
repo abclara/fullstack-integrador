@@ -9,15 +9,14 @@
 </head>
 
 <body>
-    <h1>Gestão de Alunos</h1>
+    <h1>Gestão de Disciplina</h1>
 
-    <input type="hidden" placeholder="ID do aluno">
-    <input type="text" placeholder="Nome do aluno">
-    <input type="text" placeholder="Idade do aluno">
-    <input type="text" placeholder="Sexo">
-    <input type="text" placeholder="Matricula">
-    <button onclick="inserirAluno()">Salvar</button>
-    <button onclick="atualizarAluno()">Atualizar</button>
+    <input type="hidden" placeholder="ID do disciplina">
+    <input type="text" placeholder="Nome do disciplina">
+    <input type="text" placeholder="Curso do disciplina">
+    <input type="text" placeholder="Turno">
+    <button onclick="inserirDisciplina()">Salvar</button>
+    <button onclick="atualizarDisciplina()">Atualizar</button>
 
 
     <table>
@@ -25,9 +24,8 @@
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Idade</th>
-                <th>Sexo</th>
-                <th>Matricula</th>
+                <th>Curso</th>
+                <th>Turno</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -36,13 +34,12 @@
         </tbody>
     </table>
 
-    <!-- ordem de precedência (tem que chamar a função antes) -->
-    <script src ="js/pegarAlunos.js" ></script>
-    <script src ="js/editarAluno.js" ></script>
-    <script src ="js/inserirAluno.js" ></script> 
-    <script src ="js/excluirAluno.js" ></script>
-    <script src ="js/atualizarAluno.js" ></script>  
-    
+
+    <script src="js/disciplinas-crud/editarDisciplina.js"></script>
+    <script src="js/disciplinas-crud/inserirDisciplina.js"></script>
+    <script src="js/disciplinas-crud/excluirDisciplina.js"></script>
+    <script src="js/disciplinas-crud/atualizarDisciplina.js"></script>
+    <script src="js/disciplinas-crud/pegarDisciplinas.js"></script>
 </body>
 
 </html>
