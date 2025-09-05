@@ -35,5 +35,12 @@
       "turno": "Matutino",
       "id": 2
     }
+  ],
+  "cursos": [
+    {
+      "nome": "ADS",
+      "turno": "Matutino",
+      "id": 1
+    }
   ]
 }
