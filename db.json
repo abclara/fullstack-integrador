@@ -21,5 +21,19 @@
       "matricula": "45645",
       "id": 10
     }
+  ],
+  "disciplinas": [
+    {
+      "nome": "Desenvolvimento de Sistemas",
+      "curso": "ADS",
+      "turno": "Noite",
+      "id": 1
+    },
+    {
+      "nome": "Desenvolvimento de Sistemas 2",
+      "curso": "ADS",
+      "turno": "Matutino",
+      "id": 2
+    }
   ]
 }
