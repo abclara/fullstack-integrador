@@ -1,4 +1,4 @@
- function pegarAlunos() {
+  function pegarAlunos() {
             url = "https://curly-giggle-76q669w9q6j2r5w7-3000.app.github.dev/alunos/"
             fetch(url)
                 .then((res) => {
@@ -26,4 +26,5 @@
 
                 })
         }
-        pegarAlunos()
+
+         pegarAlunos()

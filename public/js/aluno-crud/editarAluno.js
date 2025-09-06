@@ -1,4 +1,4 @@
-function editarAluno(idAluno) {
+       function editarAluno(idAluno) {
             console.log("vou editar o aluno", idAluno)
             inputs = document.querySelectorAll("input")
 

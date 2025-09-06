@@ -1,4 +1,4 @@
-function inserirAluno() {
+        function inserirAluno() {
             inputs = document.querySelectorAll("input")
 
             aluno = {

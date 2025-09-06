@@ -1,4 +1,4 @@
-function excluirAluno(idAluno) {
+        function excluirAluno(idAluno) {
             fetch(url + idAluno, {
                 method: 'DELETE'
             })

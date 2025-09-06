@@ -1,4 +1,4 @@
-function atualizarAluno() {
+       function atualizarAluno() {
             inputs = document.querySelectorAll("input")
 
             idAluno = inputs[0].value

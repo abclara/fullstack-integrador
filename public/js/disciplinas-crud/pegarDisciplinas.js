@@ -1,5 +1,5 @@
  function pegarDisciplina() {
-            url = "https://curly-giggle-76q669w9q6j2r5w7-3000.app.github.dev/disciplinas/"
+            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3000.app.github.dev/" //alterei pro link da porta gerada, dia 05.09.2025
             fetch(url)
                 .then((res) => {
                     return res.json()
