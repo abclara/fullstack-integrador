@@ -1,5 +1,5 @@
  function pegarDisciplina() {
-            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3000.app.github.dev/" //alterei pro link da porta gerada, dia 05.09.2025
+            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3001.app.github.dev/" // se mudar a porta, tem que mudar a URL
             fetch(url)
                 .then((res) => {
                     return res.json()
@@ -7,6 +7,22 @@
                 .then((disciplina) => {
                     console.log('listando', disciplina)
                     dados = document.querySelector("tbody")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     dados.innerHTML = ""
 
