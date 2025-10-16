@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    MINHA APLICAÇÃO FRONT END
+
+    <form id="formAluno">
+        <input type="text" nome = "nome" placeholder="Nome">
+        <input type="text" nome = "idade" placeholder="Idade">
+        <input type="text" nome = "sexo" placeholder="Sexo">
+        <input type="text" nome = "matricula" placeholder="Matrícula">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Matricula</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        //LÓGICA
+        // testar para fazer o FRONT puxar os dados do BACK
+
+        formAluno = document.getElementById("formAluno")
+
+        //TÁ DANDO ERRO AQUI NO FORM ALI NO FOR DE CHAVE,VALOR
+        formAluno.addEventListener("submit", (e)=> {
+            e.preventDefault()
+
+            let dados = new FormData(formAluno)
+            
+             for (let [chave, valor] of dados.entries()) {
+            console.log(chave, valor);
+            }
+        })
+
+        url = "https://reimagined-space-system-x5qjr54vg4xf979r-3000.app.github.dev/alunos"
+        fetch(url)
+        .then((res)=>{return res.json()})
+        .then ((alunos)=>{
+            console.log(alunos)
+
+            alunosList = ""
+            for(let aluno of alunos){
+                alunosList += `
+                                <tr>
+                                <th>${aluno.nome}</th>
+                                <th>${aluno.idade}</th>
+                                <th>${aluno.sexo}</th>
+                                <th>${aluno.matricula}</th>
+                                </tr>
+                              `
+            }
+
+            document.querySelector("tbody").innerHTML = alunosList
+            // document.querySelector("tbody").innerHTML = JSON.stringify(alunos) // imprimir os alunos no front pra ver se tá chegando
+        })
+        
+    </script>
+</body>
+</html>

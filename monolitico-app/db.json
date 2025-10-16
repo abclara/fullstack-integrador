@@ -20,6 +20,13 @@
       "sexo": "f",
       "matricula": "45645",
       "id": 10
+    },
+    {
+      "nome": "Maria",
+      "idade": "23",
+      "sexo": "F",
+      "matricula": "1000234",
+      "id": 11
     }
   ],
   "disciplinas": [

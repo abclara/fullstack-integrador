@@ -1,5 +1,5 @@
   function pegarAlunos() {
-            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3001.app.github.dev/"
+            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3001.app.github.dev/alunos/"
             fetch(url)
                 .then((res) => {
                     return res.json()

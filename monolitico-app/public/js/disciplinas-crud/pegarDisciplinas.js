@@ -1,5 +1,5 @@
  function pegarDisciplina() {
-            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3001.app.github.dev/" // se mudar a porta, tem que mudar a URL
+            url = "https://reimagined-space-system-x5qjr54vg4xf979r-3001.app.github.dev/disciplina/" // se mudar a porta, tem que mudar a URL
             fetch(url)
                 .then((res) => {
                     return res.json()

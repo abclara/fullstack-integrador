@@ -1,0 +1,11 @@
+{
+  "alunos": [
+    {
+      "nome": "Desenvolvimento Full",
+      "idade": "40",
+      "sexo": "F",
+      "matricula": "123456",
+      "id": 1
+    }
+  ]
+}
